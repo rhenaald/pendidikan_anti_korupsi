@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <link rel="stylesheet" href="css/sendmail.css">
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <!--logo-->
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo" />
+        </div>
+        <!--end logo-->
+  
+        <!--navigasi-->
+        <nav>
+          <ul class="nav-link">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#">Materi</a>
+              <ul>
+                <li><a href="korupsi.html">Korupsi</a></li>
+                <li><a href="koruptif.html">Koruptif</a></li>
+                <li><a href="integritas.html">Integritas</a></li>
+              </ul>
+            </li>
+            <li><a href="infografis.html">Infografis</a></li>
+            <li><a href="sendmail.html">Pelaporan</a></li>
+            <li><a href="kelompok.html">Team</a></li>
+          </ul>
+        </nav>
+        <!--end navigasi-->
+        
+        <!--hamburger menu-->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!--end hamburger menu-->
+      </div>
+    </header>
+
+    <div class="container">
+        <h1>Pelaporan</h1>
+        <div class="instruction">
+            <p>Selamat datang di platform pelaporan tindakan koruptif di lingkungan kampus Universitas Siliwangi. 
+                Mari bersama-sama mengubah lingkungan kampus kita menjadi lebih baik. 
+                Ingat, satu suara bisa membuat perubahan. Jadi, gunakan platform ini dengan baik ya! </p>
+        </div>
+        <div class="input-shape">
+            <label for="sendername">Name:</label>
+            <input type="text" id="sendername" placeholder="Nama pelaku tindakan koruptif">
+        </div>
+        <div class="input-shape">
+            <label for="to">To (email):</label>
+            <input type="text" id="to" placeholder="Email dosen atau staf terkait">
+        </div>
+        <div class="input-shape">
+            <label for="message">Message:</label>
+            <textarea id="message" cols="40" rows="8" placeholder="detail orang, dan detail kejadian"></textarea>
+        </div>
+        <button onclick="sendMail();">Send</button>
+    </div>
+    <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 - Pendidikan Anti Korupsi</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+    <script src="java script/sendmail.js"></script>
+    <script src="java script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk' , sans-serif;
+    text-decoration: none;
+}
+.kelompok{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background: #8bb8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.anggota{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.anggota img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.center h1{
+    color: #000000;
+    font-size: 4rem;
+    text-align: center;
+}
+.box{
+    padding: 16px;
+    background:#3d94e0;
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+.box h3{
+    font-size: 18px;
+    font-family: 600;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.box h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.icon i{
+    display: inline-block;
+    color: #000000;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+.icon i:hover{
+    transform: scale(1.2);
+}
+.box:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+@media(max-width: 1240px){
+    .kelompok{
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
+    .center{
+        font-size:3.2rem ;
+    }
+}
