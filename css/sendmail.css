@@ -6,7 +6,8 @@ body {
 }
 
 .container {
-    width: 400px;
+    width: 90%; /* Menggunakan persentase untuk ukuran kontainer agar responsif */
+    max-width: 400px; /* Tetapkan lebar maksimum */
     margin: 50px auto;
     padding: 20px;
     background: #fff;
@@ -42,7 +43,7 @@ h1 {
 
 input[type="text"],
 textarea {
-    width: 100%;
+    width: calc(100% - 20px); /* Ukuran input mengikuti ukuran kontainer dengan padding 10px */
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -52,7 +53,7 @@ textarea {
 }
 
 button {
-    width: 100%;
+    width: calc(100% - 20px); /* Ukuran tombol mengikuti ukuran kontainer dengan padding 10px */
     padding: 10px;
     background-color: #4facfe;
     color: #fff;
@@ -77,37 +78,6 @@ button:hover {
     text-align: center;
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        margin: 20px;
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .instruction {
-        font-size: 0.9em;
-    }
-
-    input[type="text"],
-    textarea {
-        padding: 8px;
-        margin-top: 15px;
-    }
-
-    button {
-        padding: 8px;
-    }
-
-    .alert {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-}
-
 .alert.success {
     background-color: #d4edda;
     border-color: #c3e6cb;
@@ -118,4 +88,19 @@ button:hover {
     background-color: #f8d7da;
     border-color: #f5c6cb;
     color: #721c24;
+}
+
+/* Media queries untuk tampilan seluler */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px auto; /* Ubah margin untuk tampilan seluler */
+        padding: 10px; /* Ubah padding untuk tampilan seluler */
+    }
+
+    input[type="text"],
+    textarea,
+    button {
+        padding: 8px; /* Ubah padding input dan tombol untuk tampilan seluler */
+        font-size: 14px; /* Ubah ukuran font untuk tampilan seluler */
+    }
 }
